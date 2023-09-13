@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ""
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
