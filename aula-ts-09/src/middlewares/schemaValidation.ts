@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
-import { Schema } from "joi";
+import { ObjectSchema } from "joi";
 
-export default function schemaValidation(schema: Schema) {
+export default function schemaValidation(schema: ObjectSchema) {
     
     return (req: Request, res: Response, next: NextFunction) => {
     
