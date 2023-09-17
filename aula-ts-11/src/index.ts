@@ -1,6 +1,6 @@
 import express, { Request, Response, json } from "express";
-import { CreateGame, Game } from "./protocols/game-protocol.ts";
-import gamesService from "./service/games-service.ts";
+import { CreateGame, Game } from "@/protocols/game-protocol";
+import gamesService from "@/service/games-service";
 import httpStatus from "http-status";
 
 const app = express();

@@ -1,5 +1,5 @@
 import Joi from "joi";
-import { Game } from "./../protocols/game-protocol.ts";
+import { Game } from "@/protocols/game-protocol";
 
 export const gameSchema = Joi.object<Game>({
   title: Joi.string().required(),

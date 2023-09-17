@@ -2,11 +2,14 @@
   "compilerOptions": {
     "outDir": "dist",
     "esModuleInterop": true,
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "baseUrl": "src",
-    "allowImportingTsExtensions": true,
-    "noEmit": true
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    }
   },
   "ts-node": {
     "esm": true

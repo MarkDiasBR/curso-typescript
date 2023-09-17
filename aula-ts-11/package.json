@@ -2,9 +2,13 @@
   "name": "exercicio__manda_pro_banco",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+
+  "main": "src/index.ts",
   "scripts": {
-    "dev": "nodemon src/index.ts"
+    "build": "npm install && npm run compile",
+    "compile": "npx tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +25,7 @@
     "@types/pg": "^8.10.2",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.4"
   }
 }

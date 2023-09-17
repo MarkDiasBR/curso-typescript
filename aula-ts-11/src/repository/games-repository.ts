@@ -1,5 +1,5 @@
-import { CreateGame, Game } from "../protocols/game-protocol.ts";
-import { db } from "../database/connection.ts";
+import { CreateGame, Game } from "../protocols/game-protocol";
+import { db } from "@/database/connection";
 
 async function getGames(): Promise<Game[]> {
   const games = await db.query<Game>(`

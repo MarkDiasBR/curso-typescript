@@ -1,6 +1,6 @@
 import { title } from "process";
-import gamesRepository from "../repository/games-repository.ts";
-import { CreateGame , Game } from "./../protocols/game-protocol.ts";
+import gamesRepository from "@/repository/games-repository";
+import { CreateGame , Game } from "@/protocols/game-protocol";
 
 async function getGames(): Promise<Game[]> {
   const games = await gamesRepository.getGames();
